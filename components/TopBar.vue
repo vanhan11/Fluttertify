@@ -26,7 +26,7 @@
         color="#FFB230"
         class="ml-2 text-xs font-weight-medium"
     >
-        <span class="font-3">Masuk/Daftar</span> 
+        <span class="font-4">Masuk/Daftar</span> 
     </v-btn>
     </v-app-bar>
 </template>
@@ -40,7 +40,7 @@
     align-items: center;
     justify-content: center;
 }
-.font-3{
+.font-4{
     color: rgb(255, 255, 255);
     font-size: 10px;
   }

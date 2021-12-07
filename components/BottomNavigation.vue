@@ -7,9 +7,9 @@
     >
     <v-btn v-for="(router, id) in routers"
     :key="id" :to="router.to">
-        <span>{{ router.title }}</span>
+        <span class="font-2">{{ router.title }}</span>
 
-        <v-icon>{{ router.icon }}</v-icon>
+        <v-icon color="#FFB230">{{ router.icon }}</v-icon>
     </v-btn>
     </v-bottom-navigation>
 </template>
@@ -23,6 +23,10 @@
     align-items: center;
     justify-content: center;
 }
+.font-2{
+    color: rgb(3, 45, 180);
+    font-size: 10px;
+  }
 </style>
 <script>
 export default {
