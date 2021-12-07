@@ -12,7 +12,7 @@
           </v-tab>
           <v-tab-item v-for="n in 2" :key="n">
             <v-container class="mt-10">
-              <v-carousel :show-arrows="false" delimiter-icon="mdi-minus" cycle height="250" hide-delimiter-background>
+              <v-carousel :show-arrows="false" delimiter-icon="mdi-minus" cycle height="400" hide-delimiter-background>
                 <v-carousel-item v-for="(slide, i) in slides" :key="i">
                   <v-sheet height="100%">
                     <v-row class="fill-height" align="center" justify="center">
@@ -36,7 +36,6 @@
     </v-col>
     <BottomNavigation />
   </v-row>
-
 </template>
 
 
