@@ -5,18 +5,28 @@
         app
         color="white"
         :max-width="480"
+        height="50"
         class="css"
     >
-    <v-toolbar-title>Fluttertify</v-toolbar-title>
+    <v-toolbar-title class="font-weight-bold">Fluttertify</v-toolbar-title>
     <v-spacer />
     <v-btn 
+        small
         outlined
-        color="success"
+        class="text-caption"
     >
-        <v-icon left>
-        mdi-pencil
+        <v-icon small left>
+        mdi-earth
         </v-icon>   
-        Edit
+        Id
+    </v-btn>
+    <v-btn 
+        flat
+        small
+        color="#FFB230"
+        class="ml-2 text-xs font-weight-medium"
+    >
+        <span class="font-3">Masuk/Daftar</span> 
     </v-btn>
     </v-app-bar>
 </template>
@@ -30,4 +40,8 @@
     align-items: center;
     justify-content: center;
 }
+.font-3{
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+  }
 </style>
