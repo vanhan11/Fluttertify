@@ -1,12 +1,12 @@
 <template>
     <v-app-bar
-        flat
+        elevation="0"
         fixed 
         app
         color="white"
         :max-width="480"
         height="50"
-        class="css"
+        class="css-topbar"
     >
     <v-toolbar-title class="font-weight-bold">Fluttertify</v-toolbar-title>
     <v-spacer />
@@ -21,7 +21,6 @@
         Id
     </v-btn>
     <v-btn 
-        flat
         small
         color="#FFB230"
         class="ml-2 text-xs font-weight-medium"
@@ -30,18 +29,3 @@
     </v-btn>
     </v-app-bar>
 </template>
-<style>
-.css{
-    width: 480px;
-    position: fixed;
-    top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    justify-content: center;
-}
-.font-4{
-    color: rgb(255, 255, 255);
-    font-size: 10px;
-  }
-</style>

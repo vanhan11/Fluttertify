@@ -3,7 +3,7 @@
     <v-row max-width="480">
       <v-col class="text-center">
         <TopBar />
-        <v-card class="mx-auto" max-width="480" elevation="1" flat>
+        <v-card class="mx-auto" max-width="480" elevation="1">
           <v-carousel cycle width="480" height="180" hide-delimiter-background show-arrows-on-hover>
             <v-carousel-item v-for="(slide, i) in slides" :key="i">
               <v-sheet :color="colors[i]" height="110%">
@@ -55,7 +55,7 @@
               cols="4"
               sm="4"
             >
-              <v-card flat color="#F6F9FF" class="pl-2 ml-2" height="50">
+              <v-card elevation="0" color="#F6F9FF" class="pl-2 ml-2" height="50">
                 <v-row class="m-1">
                   <v-col cols="3" sm="3">
                      <v-icon color="#FFB230" left>mdi-scale-unbalanced</v-icon>
@@ -71,7 +71,7 @@
               cols="4"
               sm="4"
             >
-              <v-card flat color="#F6F9FF" class="pl-5" height="50">
+              <v-card elevation="0" color="#F6F9FF" class="pl-5" height="50">
                 <v-row class="m-1">
                   <v-col cols="3" sm="3">
                      <v-icon color="#FFB230" left>mdi-information-outline</v-icon>
@@ -87,7 +87,7 @@
               cols="4"
               sm="4"
             >
-              <v-card flat color="#F6F9FF" class="pl-2 mr-2" height="50">
+              <v-card elevation="0" color="#F6F9FF" class="pl-2 mr-2" height="50">
                 <v-row class="m-1">
                   <v-col cols="3" sm="3">
                      <v-icon color="#FFB230" left>mdi-timer-outline</v-icon>
@@ -101,9 +101,8 @@
             </v-col>
           </v-row>
         </v-card>
-        <v-card class="mx-auto" max-width="480" flat>
+        <v-card class="mx-auto" max-width="480" elevation="0">
           <p class="font-color text-left mt-5 ml-2 pt-2 font-weight-bold text-caption">Jelajahi Produk Fluttertify</p>
-          <p class="font-color text-right mt-5 ml-2 pt-2 font-weight-bold text-caption">Jelajahi Produk Fluttertify</p>
         </v-card>
         <v-card  class="mx-auto" max-width="480">
           <v-row>
@@ -119,12 +118,12 @@
               </nuxt-link>
             </v-col>
             <v-col cols="9" sm="9" class="text-left">
-                <v-card-content>
+               <v-card elevation="0">
                   <v-card-title class="font-color text-left font-weight-bold text-caption">
                     San Francisco
                   </v-card-title>
-                  <v-card-subtitle class="font-3">Mon, 12:30 PM, Mostly sunnydwdwdww</v-card-subtitle>
-                </v-card-content>
+                  <v-card-subtitle class="font-2">Mon, 12:30 PM, Mostly sunnydwdwdww</v-card-subtitle>
+                </v-card>
             </v-col>
           </v-row>
         </v-card>
@@ -142,12 +141,12 @@
               </nuxt-link>
             </v-col>
             <v-col cols="9" sm="9" class="text-left">
-                <v-card-content>
+                <v-card elevation="0">
                   <v-card-title class="font-color text-left font-weight-bold text-caption">
                     San Francisco
                   </v-card-title>
-                  <v-card-subtitle class="font-3">Mon, 12:30 PM, Mostly sunnydwdwdww</v-card-subtitle>
-                </v-card-content>
+                  <v-card-subtitle class="font-2">Mon, 12:30 PM, Mostly sunnydwdwdww</v-card-subtitle>
+                </v-card>
             </v-col>
           </v-row>
         </v-card>
@@ -165,12 +164,12 @@
               </nuxt-link>
             </v-col>
             <v-col cols="9" sm="9" class="text-left">
-                <v-card-content>
+                <v-card elevation="0">
                   <v-card-title class="font-color text-left font-weight-bold text-caption">
                     San Francisco
                   </v-card-title>
-                  <v-card-subtitle class="font-3">Mon, 12:30 PM, Mostly sunnydwdwdww</v-card-subtitle>
-                </v-card-content>
+                  <v-card-subtitle class="font-2">Mon, 12:30 PM, Mostly sunnydwdwdww</v-card-subtitle>
+                </v-card>
             </v-col>
           </v-row>
         </v-card>
@@ -189,41 +188,7 @@
     </v-row> -->
   </div>
 </template>
-<style>
-  .bc{
-    background-color: #e6e6e6;
-    color: cornsilk;
-  }
-  .css {
-    width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    justify-content: center;
-  }
-  .mt{
-    margin-top: 40px;
-  }
-  .mt2{
-    margin-top: 20px;
-  }
-  .font-color{
-    color: #032db4;
-  }
-  .font-3{
-    color: black;
-    font-size: 10px;
-  }
-  .font-2{
-    color: #032db4;
-    font-size: 10px;
-  }
-  .font{
-    color: rgb(3, 45, 180);
-    font-size: 11px;
-    text-decoration: none;
-  }
-</style>
+
 <script>
   export default {
     data () {
