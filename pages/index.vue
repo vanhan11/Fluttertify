@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-row max-width="480">
+    <v-row>
       <v-col class="text-center">
         <TopBar />
         <v-card class="mx-auto" max-width="480" elevation="1">
@@ -119,10 +119,10 @@
             </v-col>
             <v-col cols="9" sm="9" class="text-left">
                <v-card elevation="0">
-                  <v-card-title class="font-color text-left font-weight-bold text-caption">
+                  <p class="font-color text-left font-weight-bold text-caption">
                     San Francisco
-                  </v-card-title>
-                  <v-card-subtitle class="font-2">Mon, 12:30 PM, Mostly sunnydwdwdww</v-card-subtitle>
+                  </p>
+                  <p class="font-desc">Mon, 12:30 PM, Mostly sunnydwdwdww</p>
                 </v-card>
             </v-col>
           </v-row>
@@ -142,15 +142,15 @@
             </v-col>
             <v-col cols="9" sm="9" class="text-left">
                 <v-card elevation="0">
-                  <v-card-title class="font-color text-left font-weight-bold text-caption">
+                  <p class="font-color text-left font-weight-bold text-caption">
                     San Francisco
-                  </v-card-title>
-                  <v-card-subtitle class="font-2">Mon, 12:30 PM, Mostly sunnydwdwdww</v-card-subtitle>
+                  </p>
+                  <p class="font-desc">Mon, 12:30 PM, Mostly sunnydwdwdww</p>
                 </v-card>
             </v-col>
           </v-row>
         </v-card>
-         <v-card  class="mx-auto mt-5" max-width="480">
+        <v-card  class="mx-auto mt-5" max-width="480">
           <v-row>
             <v-col cols="3" sm="3" class="">
               <nuxt-link to="">
@@ -165,11 +165,21 @@
             </v-col>
             <v-col cols="9" sm="9" class="text-left">
                 <v-card elevation="0">
-                  <v-card-title class="font-color text-left font-weight-bold text-caption">
+                  <p class="font-color text-left font-weight-bold text-caption">
                     San Francisco
-                  </v-card-title>
-                  <v-card-subtitle class="font-2">Mon, 12:30 PM, Mostly sunnydwdwdww</v-card-subtitle>
+                  </p>
+                  <p class="font-desc">Mon, 12:30 PM, Mostly sunnydwdwdww</p>
                 </v-card>
+            </v-col>
+          </v-row>
+        </v-card>
+        <v-card class="mx-auto mt-5" max-width="480" elevation="0">
+          <v-row>
+            <v-col cols="6">
+               <p class="font-color text-left mt-5 ml-2 pt-2 font-weight-bold text-caption">Informasi Penting untuk Anda</p>
+            </v-col>
+            <v-col cols="6">
+               <p class="font-color text-right mt-5 ml-2 pt-2 font-weight-bold text-caption">Informasi Penting untuk Anda</p>
             </v-col>
           </v-row>
         </v-card>
